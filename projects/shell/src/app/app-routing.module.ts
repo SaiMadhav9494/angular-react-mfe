@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WebComponentWrapper, WebComponentWrapperOptions } from '@angular-architects/module-federation-tools';
+import { HelloComponent } from 'projects/shell/src/app/hello/hello.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
       exposedModule: './react-app',
       elementName: 'react-element'
     } as WebComponentWrapperOptions
+  },
+  {
+    path: 'hello',
+    component: HelloComponent
   }
 ];
 
