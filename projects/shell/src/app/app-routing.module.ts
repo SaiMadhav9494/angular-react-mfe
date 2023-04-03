@@ -11,7 +11,7 @@ const routes: Routes = [
       remoteEntry: 'http://localhost:4201/remoteEntry.js',
       remoteName: 'react',
       exposedModule: './react-app',
-      elementName: 'react-element'
+      elementName: 'react-root'
     } as WebComponentWrapperOptions
   },
   {
