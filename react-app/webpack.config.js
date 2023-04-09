@@ -12,7 +12,7 @@ module.exports = options => {
     module: {
       rules: [
         {
-          test: /.js$/,
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: [
             {
@@ -34,7 +34,7 @@ module.exports = options => {
           library: { type: "var", name: "react" },
           filename: "remoteEntry.js", // <-- Meta Data
           exposes: {
-              './react-app': './app.js',
+              './react-app': './app.jsx',
           },        
           shared: ["react", "react-dom"]
         }),

@@ -4,12 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Here's a [The Microfrontend Revolution: Module Federation in Webpack 5 - ANGULARarchitects](https://www.angulararchitects.io/aktuelles/the-microfrontend-revolution-module-federation-in-webpack-5/)
 
+
 ## Development server
 
 In the root directory, first run `npm install`, then run `npm run all` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 In the react-app directory, in a new command line instance, first run `npm install`, then  `npm start` for a dev server. Navigate to `http://localhost:3000/`. The application will automatically reload if you change any of the source files.
+
+I've added a workaround/hack to allow Angular Router Navigation to be called from React with a global window state. See the app.component.ts file and NavigateLinkToAngular component.
 
 ## Code scaffolding
 
